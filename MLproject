@@ -1,5 +1,3 @@
-name: example
-
 conda_env: conda.yaml
 
 entry_points:
