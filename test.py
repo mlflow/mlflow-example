@@ -12,4 +12,3 @@ if __name__ == "__main__":
     log_metric("foo", 5)
     log_metric("foo", 6)
     log_metric("foo", 7)
-    log_artifacts("outputs")
