@@ -1,61 +1,9 @@
-name: myenv
+name: tutorial
 channels:
   - defaults
 dependencies:
-  - appnope=0.1.0=py36hf537a9a_0
-  - backcall=0.1.0=py36_0
-  - ca-certificates=2018.03.07=0
-  - certifi=2018.4.16=py36_0
-  - click=6.7=py36hec950be_0
-  - decorator=4.3.0=py36_0
-  - expat=2.2.5=hb8e80ba_0
-  - flask=0.12.2=py36h5658096_0
-  - gitdb2=2.0.3=py36_0
-  - gitpython=2.1.9=py36_0
-  - intel-openmp=2018.0.0=8
-  - ipython=6.3.1=py36_0
-  - ipython_genutils=0.2.0=py36h241746c_0
-  - itsdangerous=0.24=py36h49fbb8d_1
-  - jedi=0.12.0=py36_1
-  - jinja2=2.10=py36hd36f9c5_0
-  - libcurl=7.59.0=hf30b1f0_0
-  - libcxx=4.0.1=h579ed51_0
-  - libcxxabi=4.0.1=hebd6815_0
-  - libedit=3.1=hb4e282d_0
-  - libffi=3.2.1=h475c297_4
-  - libgfortran=3.0.1=h93005f0_2
-  - libiconv=1.15=hdd342a3_7
-  - libssh2=1.8.0=h322a93b_4
-  - markupsafe=1.0=py36h3a1e703_1
-  - mkl=2018.0.2=1
-  - mkl_fft=1.0.1=py36h917ab60_0
-  - mkl_random=1.0.1=py36h78cc56f_0
-  - ncurses=6.0=hd04f020_2
-  - numpy=1.14.2=py36ha9ae307_1
-  - openssl=1.0.2o=h26aff7b_0
-  - pandas=0.22.0=py36h0a44026_0
-  - parso=0.2.0=py36_0
-  - perl=5.26.0=h5b8ca18_0
-  - pexpect=4.5.0=py36_0
-  - pickleshare=0.7.4=py36hf512f8e_0
-  - pip=9.0.3=py36_0
-  - prompt_toolkit=1.0.15=py36haeda067_0
-  - ptyprocess=0.5.2=py36he6521c3_0
-  - pygments=2.2.0=py36h240cd3f_0
-  - python=3.6.5=hc167b69_1
-  - python-dateutil=2.7.2=py36_0
-  - pytz=2018.4=py36_0
-  - readline=7.0=hc1231fa_4
-  - setuptools=39.0.1=py36_0
-  - simplegeneric=0.8.1=py36_2
-  - six=1.11.0=py36h0e22d5e_1
-  - smmap2=2.0.3=py36_0
-  - sqlite=3.23.1=hf1716c9_0
-  - tk=8.6.7=h35a86e2_3
-  - traitlets=4.3.2=py36h65bd3ce_0
-  - wcwidth=0.1.7=py36h8c6ec74_0
-  - werkzeug=0.14.1=py36_0
-  - wheel=0.31.0=py36_0
-  - xz=5.2.3=h727817e_4
-  - zlib=1.2.11=hf3cbc9b_2
-
+  - numpy=1.14.3
+  - pandas=0.22.0
+  - scikit-learn=0.19.1
+  - pip:
+    - mlflow
