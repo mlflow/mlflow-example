@@ -54,7 +54,7 @@ if __name__ == "__main__":
         print("Elasticnet model (alpha=%f, l1_ratio=%f):" % (alpha, l1_ratio))
         print("  RMSE: %s" % rmse)
         print("  MAE: %s" % mae)
-        print("  R2: %s" % r2)
+        print("  R2  : %s" % r2)
         print(" Different branch")
 
         mlflow.log_param("alpha", alpha)
@@ -64,3 +64,4 @@ if __name__ == "__main__":
         mlflow.log_metric("mae", mae)
 
         mlflow.sklearn.log_model(lr, "model")
+        print(" Completed")
