@@ -25,6 +25,7 @@ def eval_metrics(actual, pred):
 
 
 if __name__ == "__main__":
+    mlflow.set_tracking_uri("sqlite:///mlruns.db")
     warnings.filterwarnings("ignore")
     np.random.seed(40)
 
