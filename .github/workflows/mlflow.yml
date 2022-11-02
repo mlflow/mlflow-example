@@ -1,0 +1,12 @@
+name: Modelcard sync with MLflow run
+on:
+  workflow_dispatch: {}
+
+jobs:
+  mlflow:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: ./.github/actions/mlflow-run-id
+        env:
+          MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
