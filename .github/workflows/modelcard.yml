@@ -1,0 +1,20 @@
+name: modelcard-test
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  modelcard-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v3
+
+      - name: Check for model card file
+        uses: CompliancePal/modelcard-action@mlflow-action-experiments
+        env:
+          MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
+        with:
+          modelcard: modelcard.yaml
