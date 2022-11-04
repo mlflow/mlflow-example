@@ -1,5 +1,0 @@
-name: mlflow-run-id
-description: MLflow run-id info
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
