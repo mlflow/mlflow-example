@@ -3,6 +3,3 @@ model_details:
   version:
     name: 1.0.0
     date: 2022-11-03
-  run:
-    id: 2a84d204c6794965bc36641b46b77255
-    type: mlflow
