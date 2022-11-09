@@ -2,7 +2,11 @@ name: modelcard-test
 
 on:
   pull_request:
-    branches: [main]
+    branches:
+      - main
+  push:
+    branches:
+      - demos/*
   workflow_dispatch:
 
 jobs:
@@ -18,3 +22,4 @@ jobs:
           MLFLOW_TRACKING_URI: ${{ secrets.MLFLOW_TRACKING_URI }}
         with:
           modelcard: modelcard.yaml
+          rules: .rules
