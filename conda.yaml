@@ -1,3 +1,4 @@
+conda env export --no-builds > conda.yaml 
 name: tutorial
 channels:
   - defaults
