@@ -2,8 +2,8 @@ name: tutorial
 
 venv:
   name: mlops
-  python: "3.8"
-  requirements: requirements.txt
+  python: "3.11"
+
 
 entry_points:
   main:
