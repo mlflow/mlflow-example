@@ -1,6 +1,12 @@
 name: tutorial
 
-conda_env: conda.yaml
+venv:
+  name: mlops
+  python: "3.8"
+  dependencies:
+    - numpy
+    - pandas
+    - scikit-learn
 
 entry_points:
   main:
