@@ -3,10 +3,7 @@ name: tutorial
 venv:
   name: mlops
   python: "3.8"
-  dependencies:
-    - numpy
-    - pandas
-    - scikit-learn
+  requirements: requirements.txt
 
 entry_points:
   main:
